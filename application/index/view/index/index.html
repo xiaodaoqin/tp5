@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户列表</title>
+</head>
+<body>
+	<table style="width:600px;margin:0 auto;text-align:center">
+		<thead>
+			<tr>
+				<th>序号</th>
+				<th>用户名</th>
+				<th>用户密码</th>
+				<th>注册时间</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			{volist name="data" id="qwe"}
+			<tr>
+				<td>{$qwe['id']}</td>
+				<td>{$qwe['name']}</td>
+				<td>{$qwe['pwd']}</td>
+				<td>{$qwe['addtime']|date='Y-m-d',###}</td>
+				<td><a href="">删除</a></td>
+			</tr>
+			{/volist}
+		</tbody>
+	</table>
+</body>
+</html>

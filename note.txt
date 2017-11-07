@@ -1,0 +1,4 @@
+MVC模式：
+1、M：modle 模型
+2、V：view  图形
+3、C：controller 控制器
